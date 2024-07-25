@@ -2,21 +2,16 @@ package com.ndieric.ManePlan.models.plan;
 
 import java.time.LocalDate;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-
-@Entity(name = "Plan")
-@Table(name = "tbl_plans")
-public class Plan {
+public class PlanResponse {
   private Long id;
   private String description;
   private LocalDate dateCreation;
   private LocalDate dateExecution;
 
-  public Plan() {
+  public PlanResponse() {
   }
 
-  public Plan(Long id, String description, LocalDate dateCreation, LocalDate dateExecution) {
+  public PlanResponse(Long id, String description, LocalDate dateCreation, LocalDate dateExecution) {
     this.id = id;
     this.description = description;
     this.dateCreation = dateCreation;

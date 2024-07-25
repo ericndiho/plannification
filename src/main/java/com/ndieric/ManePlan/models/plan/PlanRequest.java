@@ -2,33 +2,18 @@ package com.ndieric.ManePlan.models.plan;
 
 import java.time.LocalDate;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-
-@Entity(name = "Plan")
-@Table(name = "tbl_plans")
-public class Plan {
-  private Long id;
+public class PlanRequest {
   private String description;
   private LocalDate dateCreation;
   private LocalDate dateExecution;
 
-  public Plan() {
+  public PlanRequest() {
   }
 
-  public Plan(Long id, String description, LocalDate dateCreation, LocalDate dateExecution) {
-    this.id = id;
+  public PlanRequest(String description, LocalDate dateCreation, LocalDate dateExecution) {
     this.description = description;
     this.dateCreation = dateCreation;
     this.dateExecution = dateExecution;
-  }
-
-  public Long getId() {
-    return id;
-  }
-
-  public void setId(Long id) {
-    this.id = id;
   }
 
   public String getDescription() {
