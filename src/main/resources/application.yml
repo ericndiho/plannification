@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: mane-plan
+  jpa:
+    hibernate:
+      ddlAuto: update
+    properties:
+      hibernate:
+        format_sql: true
+    datasource:
+    url: mysql://root:BggmiRQWzWFHHdsxYLwEoOberRTJgdtl@mysql.railway.internal:3306/railway
+    username: root
+    password: BggmiRQWzWFHHdsxYLwEoOberRTJgdtl
+    driver-class-name: com.mysql.cj.jdbc.Driver
